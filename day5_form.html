@@ -8,12 +8,12 @@
 <body>
     <center>
         <h1>Registion Form</h1>
-        <form action="#" name="Registration Form" method="get" enctype="multipart/form-data">
+        <form action="#" name="Registration Form" method="post" autocomplete="off">
            <label for="firstname">Enter Your First Name:</label>
-            <input type="text" id="firstname" required>
+            <input type="text" id="firstname" required placeholder="Enter your First Name">
             <br>
             <label for="Last Name">Enter Your Last Name</label>
-            <input type="text" id="Last Name" required>
+            <input type="text" id="Last Name" required >
             <br>
             <label for="Email">Enter you Emailid:</label>
             <input type="email" id="Email" required>
@@ -24,7 +24,50 @@
             <label for="DOB"> Enter your DOB:</label>
             <input type="date" required>
             <br>
-            <button>Submit</button>
+            <label for="age">Enter Your Age</label>
+            <input type="number">
+            <br>
+           <h4>Enter your Gender</h4>
+           <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="others">Others</label>
+            <input type="radio" name="gender" id="others">
+            <br>
+            <h4>Education</h4>
+            <label for="SSC">SSC</label>
+            <input type="checkbox" id="SSC">
+            <label for="Inter">Inter</label>
+            <input type="checkbox" id="Inter">
+            <label for="Graduation">Graduation</label>
+            <input type="checkbox" id="Graduation">
+            <label for="PG">PG</label>
+            <input type="checkbox" id="PG">
+            <br>
+            <h4>Please Enter Your State</h4>
+            <label for="state">select State</label>
+            <select name="state" id="state">
+                <option value="select Option">----Select State----</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="TG">Telengana</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="kL">Kerala</option>
+                <option value="KA">Karnataka</option>
+            </select>
+            <br>
+            <label for="add">Enter Your Address</label>
+            <textarea name="add" id="add" cols="40" rows="10"></textarea>
+            <br>
+            <label for="Enter your passwword">Enter Your Password</label>
+            <input type="password">
+            <label for="Confirm password">Confirm Password</label>
+            <input type="password">
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+            <input type="button" value="Next">
+            
         </form>
     </center>
 </body>
